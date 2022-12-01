@@ -10,8 +10,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/index-images.css">
+    <link rel="stylesheet" href="assets/css/index.css"><!-- 
+    <link rel="stylesheet" href="assets/css/index-images.css"> -->
     <!-- Navik navigation CSS -->
     <link
         href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
@@ -246,10 +246,6 @@
     <div id="product-modal" class="modal" tabindex="-1" style="margin-top: 8%;overflow: scroll;z-index: 100000;">
         <div class="modal-dialog  modal-lg">
             <div class="modal-content">
-                <!-- <div class="modal-header">
-                        <h5 class="modal-title" style="width: 90%;">Alert</h5>
-                        <button type="button" class="close message-modal-close" data-dismiss="modal" aria-label="Close" style="text-align: right;"><span aria-hidden="true">&times;</span></button>
-                    </div> -->
                 <div class="modal-body">
                     <!-- <p>To add an item to the cart you have to login first.</p> -->
                     <div class="row">
@@ -299,11 +295,11 @@
         var _selectedList = [];
         $(document).ready(function () {
 
-            /* if (!IsUserLoggedIn()) {
+             if (!IsUserLoggedIn()) {
                 $('#logged-in-info').hide();
                 $('.icon-badge').hide();
 
-            } else { */
+            } else 
             var username = localStorage.getItem('_username');
 
             if (username == null || username == "") {
