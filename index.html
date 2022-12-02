@@ -233,7 +233,7 @@
                     <button type="button" class="close message-modal-close" data-dismiss="modal" aria-label="Close"
                         style="text-align: right;"><span aria-hidden="true">&times;</span></button>
                 </div>
-                <div class="modal-body1">
+                <div class="modal-body">
                     <!-- <p>To add an item to the cart you have to login first.</p> -->
                 </div>
                 <div class="modal-footer">
@@ -331,7 +331,7 @@
                 populateProducts($(this).val())
             })
             $(document).on('click', '.add-to-cart,.add-to-cart-modal', function () {
-                  if (!IsUserLoggedIn()) {
+                if(!localStorage.getItem('_username')) {
                      $('#login-confirmation').show();
                      return;
                  } 
